@@ -10944,6 +10944,24 @@ a.text-dark:focus {
   }
 }
 
+header {
+  height: 100%;
+  border: 1px solid red;
+  background-color: #262626;
+}
+
+.container {
+  width: 1500px;
+}
+
+.header-top {
+  padding: 0 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+
 .logo {
   width: 100px;
   height: 100px;
@@ -10956,6 +10974,7 @@ a.text-dark:focus {
      object-fit: contain;
 }
 
+<<<<<<< HEAD
 footer {
   background-color: #0b0d0f;
 }
@@ -11024,5 +11043,29 @@ footer {
   width: 1500px;
   display: flex;
   padding: 100px 0;
+=======
+.nav-menu {
+  background-color: lightblue;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu li {
+  margin: 0 10px 0;
+}
+
+.nav-menu li a {
+  display: inline-block;
+  padding: 20px;
+}
+
+.jumbotron {
+  width: 100%;
+  height: calc(100vh - 200px);
+  background-image: url("/images/jumbo.jpg");
+  background-position: center center;
+  background-size: cover;
+>>>>>>> main
 }
 
