@@ -10947,6 +10947,7 @@ a.text-dark:focus {
 header {
   height: 100%;
   border: 1px solid red;
+  background-color: #262626;
 }
 
 .container {
@@ -10954,6 +10955,7 @@ header {
 }
 
 .header-top {
+  padding: 0 50px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10986,5 +10988,13 @@ header {
 .nav-menu li a {
   display: inline-block;
   padding: 20px;
+}
+
+.jumbotron {
+  width: 100%;
+  height: calc(100vh - 200px);
+  background-image: url("/images/jumbo.jpg");
+  background-position: center center;
+  background-size: cover;
 }
 
