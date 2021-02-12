@@ -1,13 +1,14 @@
 header {
     height: 100%;
     border: 1px solid red;
-
+    background-color: #262626;
 }
 .container {
     width: 1500px;
 }
 
 .header-top {
+    padding: 0 50px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,9 +41,6 @@ header {
     display: inline-block;
     padding: 20px;
 }
-
-
-
 
 
 // html, body {

@@ -17,6 +17,8 @@
 
         @include('partials.header')
 
+        @include('partials.jumbotron')
+
 
         {{-- <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
