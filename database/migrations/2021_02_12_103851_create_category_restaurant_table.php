@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCategoryUserTable extends Migration
+class CreateCategoryRestaurantTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreateCategoryUserTable extends Migration
      */
     public function up()
     {
-        Schema::create('category_user', function (Blueprint $table) {
-
+        Schema::create('category_restaurant', function (Blueprint $table) {
             $table->unsignedBigInteger('category_id');
             $table->foreign('category_id')->references('id')->on('categories');
-            $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users');
-            $table->primary(['category_id', 'user_id']);
+            $table->unsignedBigInteger('restaurant_id');
+            $table->foreign('restaurant_id')->references('id')->on('restaurants');
+            $table->primary(['category_id', 'restaurant_id']);
         });
     }
 
@@ -30,6 +29,6 @@ class CreateCategoryUserTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('category_user');
+        Schema::dropIfExists('category_restaurant');
     }
 }
